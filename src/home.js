@@ -1,15 +1,11 @@
 function buildHomePage() {
+  const body =document.querySelector('body');
   const main = document.createElement("div");
   main.classList.add("main");
 
   const titleWrapper = document.createElement("div");
   titleWrapper.classList.add("title-wrapper");
   main.appendChild(titleWrapper);
-
-  const bbq = document.createElement('img');
-  bbq.src = '../src/bbq.jpg';
-  bbq.classList.add('bbq-img');
-  main.appendChild(bbq);
 
   const title = document.createElement("h2");
   title.classList.add("title");
