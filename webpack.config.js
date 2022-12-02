@@ -1,21 +1,13 @@
 const path = require("path");
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 module.exports = {
+  mode: 'development',
   entry: "./src/index.js",
+  devtool: 'inline-source-map',
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [
-    new GoogleFontsPlugin({
-        fonts: [
-            { family: "Rubik" },
-            { family: "Roboto", variants: [ "400", "700italic" ] }
-        ]
-        /* ...options */
-    })
-],
   module: {
     rules: [
       {

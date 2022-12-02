@@ -1,6 +1,6 @@
 function buildHomePage() {
   const body =document.querySelector('body');
-  const main = document.createElement("div");
+  const main = document.querySelector('.main')
   main.classList.add("main");
 
   const titleWrapper = document.createElement("div");
@@ -24,6 +24,7 @@ function buildHomePage() {
 
 function loadHomePage() {
   const content = document.getElementById("content");
+  
   content.appendChild(buildHomePage());
 }
 

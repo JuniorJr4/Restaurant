@@ -42,10 +42,13 @@
 } */
 
 body {
+  min-height: 100%;
   background-color: var(--blue-zodiac);
   font-family: "Rubik", 'Roboto';
   background-image: url(./bbq.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 .title, .main-info {
@@ -57,4 +60,38 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.nav {
+  display: flex;
+  background-color: var(--ebony);
+  opacity: .85;
+  height: 75px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 25px;
+}
+
+.btn {
+  height: 40px;
+  width: 75px;
+  background-color: var(--red);
+  color: var(--supernova);
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid var(--supernova);
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+
+.menu-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
 }

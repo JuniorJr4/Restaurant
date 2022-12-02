@@ -10,11 +10,12 @@ function createContact() {
 
     contactWrapper.appendChild(contactInfo);
 
-    return main;
+    return contactWrapper;
 }
 
 function loadContact() {
     const main = document.querySelector('.main');
-    main.textContent = '';
     main.appendChild(createContact());
 }
+
+export  default loadContact;
