@@ -17,7 +17,7 @@ function buildNav() {
   navWrapper.classList.add("nav");
 
   const homeBtn = document.createElement("button");
-  homeBtn.classList.add("btn");
+  homeBtn.classList.add("btn", 'active');
   homeBtn.textContent = "Home";
   homeBtn.addEventListener("click", (e) => {
     main.textContent = "";
