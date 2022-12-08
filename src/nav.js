@@ -46,9 +46,14 @@ function buildNav() {
     loadMenu();
   });
 
+  const name = document.createElement('h2');
+  name.classList.add('name');
+  name.textContent = "Bobbies' Place";
+
   navWrapper.appendChild(homeBtn);
   navWrapper.appendChild(menuBtn);
   navWrapper.appendChild(contactBtn);
+  navWrapper.appendChild(name);
 
   return navWrapper;
 }

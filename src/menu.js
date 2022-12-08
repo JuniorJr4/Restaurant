@@ -7,6 +7,7 @@ function createMenuCard(item, pic, cost) {
   cardContainer.appendChild(dish);
 
   const dishImage = document.createElement("img");
+  dishImage.classList.add('dish-image');
   dishImage.src = pic;
   cardContainer.appendChild(dishImage)
   
