@@ -22,7 +22,7 @@ function buildHomePage() {
 
   const mainImage = document.createElement("img");
   mainImage.src = "../src/platter.jpg";
-  mainImage.classList.add('main-image');
+  mainImage.classList.add("main-image");
   main.appendChild(mainImage);
 
   return main;
@@ -30,7 +30,6 @@ function buildHomePage() {
 
 function loadHomePage() {
   const content = document.getElementById("content");
-
   content.appendChild(buildHomePage());
 }
 

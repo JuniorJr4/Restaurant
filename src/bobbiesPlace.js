@@ -1,5 +1,7 @@
 import loadHomePage from "./home";
 import loadNav from "./nav";
+import loadFooter from "./footer";
+
 function createMain() {
   const main = document.createElement('div');
   main.classList.add('main');
@@ -10,5 +12,6 @@ function renderSite() {
   content.appendChild(createMain());
   loadNav();
   loadHomePage();
+  loadFooter();
 }
 export default renderSite;
