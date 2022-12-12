@@ -21,7 +21,7 @@ function buildHomePage() {
   main.appendChild(mainInfo);
 
   const mainImage = document.createElement("img");
-  mainImage.src = "/Restaurant/src/platter.jpg";
+  mainImage.src = "/restaurant/src/platter.jpg";
   mainImage.classList.add("main-image");
   main.appendChild(mainImage);
 
