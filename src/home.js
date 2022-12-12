@@ -1,5 +1,5 @@
 function buildHomePage() {
-  const body = document.querySelector("body");
+  // const body = document.querySelector("body");
   const main = document.querySelector(".main");
   main.classList.add("main");
 
@@ -16,7 +16,7 @@ function buildHomePage() {
   const mainInfo = document.createElement("p");
   mainInfo.classList.add("main-info");
   mainInfo.textContent =
-    "Ici, à Bobbies' Place, vous découvrirez le meilleur barbecue à l'américaine de France. Commandez nos viandes au kilo";
+    "Ici, à Bobbies' Place, vous découvrirez le meilleur barbecue à l'américaine de France. Commandez nos viandes au kilo.";
 
   main.appendChild(mainInfo);
 
@@ -29,8 +29,8 @@ function buildHomePage() {
 }
 
 function loadHomePage() {
-  const content = document.getElementById("content");
-  content.appendChild(buildHomePage());
+  const mainMain = document.querySelector(".main-main");
+  mainMain.appendChild(buildHomePage());
 }
 
 export default loadHomePage;
