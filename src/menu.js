@@ -25,7 +25,7 @@ function createMenu() {
   menuTitle.classList.add('menu-title');
   menuWrapper.appendChild(menuTitle);
   menuWrapper.classList.add("menu-wrapper");
-  menuWrapper.appendChild(createMenuCard("Pork Ribs", "../src/ribs.jpg", '22€/kg'));
+  menuWrapper.appendChild(createMenuCard("Pork Ribs", "src/ribs.jpg", '22€/kg'));
   menuWrapper.appendChild(createMenuCard("Brisket", "../src/brisket.jpg", '20€/kg'));
   menuWrapper.appendChild(createMenuCard("Hot Links", "../src/hotlinks.jpg", '18€/kg'));
   menuWrapper.appendChild(createMenuCard("Smoked Chicken", "../src/chicken.jpg", '18€/kg'));
